@@ -1,0 +1,15 @@
+app:
+  name: gkute-poi-map-app
+  namespace: gkute
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/gkute-frontend
+  org: rhdh-deploy
+  name: gkute-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: gkute/poi-map-app
+  tag: latest
